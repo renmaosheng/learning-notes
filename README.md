@@ -1,2 +1,3 @@
 # learning-notes
-好记性不如烂笔头
+- 好记性不如烂笔头
+- Inspired by Daniel Guo
