@@ -1,4 +1,4 @@
-## the difference between LLM & program
+## The difference between LLM & program
 - Hallucination
 - context window size limitation
 - latency (like a remote call, end to end round trip time)
