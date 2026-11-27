@@ -1,3 +1,16 @@
+## What are admission controllers
+
+- **Gatekeeper** that intercept (authenticated) API requests and may change the request object or deny the request altogether.
+  For example, when a namespace is deleted and subsequently enters the Terminating state, the NamespaceLifecycle admission
+  controller is what prevents any new objects from being created in this namespace.
+- Among the more than 30 admission controllers shipped with Kubernetes, two take a special role because of their nearly
+  limitless flexibility - **`ValidatingAdmissionWebhooks`** and **`MutatingAdmissionWebhooks`**.
+  This approach decouples the admission controller logic from the Kubernetes API server, thus allowing users to implement
+  custom logic to be executed whenever resources are created, updated, or deleted in a Kubernetes cluster.
+![admission controller phases](resources/admission-webhook-phrases.png)
+
+![validating-webhook-flow](resources/validating-webhook-flow.png)
+
 ## What is ETCD
 
 <https://etcd.io/>
