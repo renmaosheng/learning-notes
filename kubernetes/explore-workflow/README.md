@@ -48,6 +48,8 @@
 
 ![pod-to-pod-networking](./resources/pod-to-pod-network-same-node.gif)
 
+The two networking images above are from [danniel1205/tech-notes](https://github.com/danniel1205/tech-notes/tree/master/k8s/how-pod-created-with-network-configured/resources) and are distributed under the [Apache License 2.0](./resources/LICENSE).
+
 - `ReplicaSet` controller reconciles the `Pod` objects.
 - If Pod object terminates unexpectedly, kubelet notices the change:
   - Get the Pod object from API Server.
